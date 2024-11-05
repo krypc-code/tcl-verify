@@ -1,0 +1,12 @@
+hmac: 
+data_hash: 
+payload:
+  period_start_date: 
+  period_end_date: 
+  invoice_id: 
+  invoice_amount: 
+  total_volume: 
+  payment_initiated_date: 
+  payment_initiated_amount: 
+  service_type: 
+  total_quantity: 
