@@ -6,11 +6,12 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"log"
+	"tcl-verify/config"
 )
 
 func main() {
 	// read data from yaml file
-	data := ReadYaml("data.yaml")
+	data := config.ReadYaml("data.yaml")
 
 	payloadBytes, err := json.Marshal(data.Payload)
 	if err != nil {
@@ -28,9 +29,13 @@ func main() {
 
 // GetHmacHash use hmac key to generate payload hash
 func GetHmacHash(payload []byte, hmacKey string) string {
-	hmac := hmac.New(sha256.New, []byte(hmacKey))
+	keyRaw, err := base64.StdEncoding.DecodeString(hmacKey)
+	if err != nil {
+		log.Panic("Error while decoding hmac key, " + err.Error())
+	}
+	hmac := hmac.New(sha256.New, keyRaw)
 
-	_, err := hmac.Write(payload)
+	_, err = hmac.Write(payload)
 	if err != nil {
 		log.Panic("Error while hashing data")
 	}

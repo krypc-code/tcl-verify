@@ -1,12 +1,12 @@
-hmac: 
-data_hash: 
-payload:
-  period_start_date: 
-  period_end_date: 
-  invoice_id: 
-  invoice_amount: 
-  total_volume: 
-  payment_initiated_date: 
-  payment_initiated_amount: 
-  service_type: 
-  total_quantity: 
+hmac: jrLrejmAyN683tQLqfcOroQNjbmZ4Y4RlZe7kQy/ieFPktPh/rAHPIb8P29Mema1GBXp83r6XOj98gyBVPR6RDzWyaYnhs0FzU+Jv9ycAsbj1SK9VEq5UdMzkjrhgApCJkE7fIMnr1qAYVy4BrRh/it8O7hXU5qQjPXTrNAA5HF+i9jPnGvYLOahGRts484Ub5e73AIXv0uOgN+SucdUjIyZNA9KMIg4XPQL8dDIuPsV7GNdkK97RmyABvaHacQXSU5hcPCiOLcsPvgiruZ6rLHD59WaDPmCWQp8yHUpBn/ZC44qk9qaK6E+xw9B2TruY0uTQ1gFjdcfWTrFf2umyQ==
+data_hash: MhXzPrIpWp5Ay7OdiZMSaggbp9PyYJt358sqyD52NC0=
+payload:  
+  period_start_date: 2024-06-01  
+  period_end_date: 2024-06-15  
+  invoice_id: TECOM-2024-1308  
+  invoice_amount: 5939.59  
+  total_volume: 141167.25  
+  payment_initiated_date:   
+  payment_initiated_amount:   
+  service_type: VOICE  
+  total_quantity:
